@@ -1,0 +1,87 @@
+html{
+    box-sizing: border-box;
+    font-size: medium;
+}
+
+
+body{
+    font-family: 'Secular One', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+h1{
+    font-weight: 400;
+    color: white;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    right: 10px;
+    width: 100%;
+    background-color: #f8cf9b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contenedorCarrito{
+    padding: 10px;
+    cursor: pointer;
+    color: white
+}
+
+.totalItem {
+    color: white;
+    background-color: red;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.productosListado{
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+}
+.container {
+    margin: auto;
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 60px 0;
+}
+.containerCards{
+    margin: 50px 0;
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: center;
+    gap: 50px;
+}
+
+.card{
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.cardImg{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.cardTexto{
+    color: #fcb9aa;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    background-color: #fcb9aa;
+    padding: 10px 10px;
+    border-radius: 10px;
+}

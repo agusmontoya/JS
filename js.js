@@ -9,11 +9,11 @@ const orderarPrecioMenor = () => {
 
 const mostarLista = () => {
     
-    const listaOrdenada = listaPrendasDisponibles.map (prendas => {
+    const listaOrdenada = listaPrendasDisponibles.map (prenda => {
         return prenda.nombre + " " + prenda.precio
     })
     alert ("Stock disponible:" + "\n\n" + listaOrdenada)
-    comprarPrendas(prendasDisponibles)
+    comprarPrendas(listaOrdenada)
 }
 
 const comprarPrendas = (prendasDisponibles) => {
@@ -22,7 +22,7 @@ const comprarPrendas = (prendasDisponibles) => {
     let seguirComprando = false 
 
     do {
-        nombrePrenda = prompt ("Qué desea comprar?" + "\n" + listaOrdenada)
+        nombrePrenda = prompt ("Qué desea comprar?" + "\n" + prendasDisponibles)
         cantidadPrenda = parseInt(prompt("Cuántas prendas desea agregar en el carrito?"))
 
 
