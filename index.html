@@ -15,7 +15,7 @@
 
         <div class="contenedorCarrito">
             <i class="bx bx-cart"></i>
-            <span class="totalItem">0</span>
+            <span id="totalItem">0</span>
         </div>
     </nav>
     <main id="contenedorProductos"> 
@@ -26,10 +26,11 @@
       <div class="modalCarrito">
         <h3>Tu carrito</h3>
         <button id="cerrarCarrito"><i class="fas fa-times-circle"></i></button>
-        <div id="carrito-contenedor">
+        <div id="carritoContenedor">
 
         </div>
-      <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p>
+      <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+      <button id="vaciarCarrito" class="btnAgregar">Vaciar carrito</button>
 
       </div>
     </div>
