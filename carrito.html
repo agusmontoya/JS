@@ -25,9 +25,8 @@
     <main>
         <h2 class="tituloCarrito">Carrito</h2>
         <div class="contenedorCarrito">
-            <p class="carritoVacio">Tu carrito está vacío</p>
             <div class="carritoProductos disabled">
-                <div class="carritoProducto">
+                div id="carritoProducto" class="carritoProducto">
                     <img class="carrito-producto-imagen" src="./images/vestidoVintage.jpeg" alt="">
                     <div class="carrito-producto-nombre">
                         <small>Producto</small>
@@ -35,7 +34,7 @@
                     </div>
                     <div class="carrito-producto-cantidad">
                         <small>Cantidad</small>
-                        <p>1</p>
+                        <p id="cantidad">1</p>
                     </div>
                     <div class="carrito-producto-precio">
                         <small>Precio</small>
@@ -47,7 +46,8 @@
                     </div>
                     <button class="eliminarDeCarrito"><i class="bi bi-trash-fill"></i></button>
                 </div>
-                <div class="carrito-acciones disabled">
+                
+                <div id="carritoAcciones" class="carrito-acciones disabled">
                     <div class="btnVaciarCarrito">
                         <button class="vaciarCarrito">Vaciar carrito</button>
                     </div>
@@ -61,12 +61,13 @@
                         </div>
                         
                     </div>
+                    </div>
                 </div>
             </div>
         </div>
-      </div>
     </main>
    </div>
-
+   
+  <script src="./js/cart.js"></script>
 </body>
 </html>
