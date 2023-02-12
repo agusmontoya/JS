@@ -22,7 +22,16 @@ function pintarProductos () {
 
 pintarProductos();
 
-let carrito = [];
+let carrito;
+
+
+const carritoLocalStorage = JSON.parse(localStorage.getItem("productos-carrito"))
+if (carritoLocalStorage) {
+   carrito = carritoLocalStorage;
+   actualizarContador()
+} else {
+    carrito = []
+}
 
 
 contenedorProductos.addEventListener ('click', (e)=>{
